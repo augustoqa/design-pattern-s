@@ -1,0 +1,25 @@
+{
+    "name": "checha/composite",
+    "description": "Patr\u0000n de Dese\u0000o Composite",
+    "authors": [
+        {
+            "name": "Cesar Acual",
+            "email": "chechaacual@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Styde\\Html\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Styde\\Tests\\": "tests"
+        }
+    }
+}
