@@ -4,15 +4,10 @@
 namespace Styde\Html;
 
 
-class Form
+class Form extends PairedElement
 {
-    public function add()
+    public function tagName()
     {
-        
-    }
-
-    public function render()
-    {
-        
+        return 'form';
     }
 }
