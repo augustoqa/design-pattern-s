@@ -4,7 +4,7 @@
 namespace Styde\Html;
 
 
-class Textarea extends PairedElement
+class Input extends VoidElement
 {
     private $name;
 
@@ -15,7 +15,7 @@ class Textarea extends PairedElement
 
     public function tagName()
     {
-        return 'textarea';
+        return 'input';
     }
 
     public function attributes()

@@ -4,6 +4,7 @@
 namespace Styde\Tests;
 
 
+use Styde\Html\Fieldset;
 use Styde\Html\Form;
 
 class FormTest extends TestCase
@@ -38,5 +39,17 @@ class FormTest extends TestCase
         $form->remove('Element');
 
         $this->assertCount(0, $form->getChildren());
+    }
+
+    /** @test */
+    function it_renders_nested_elements()
+    {
+        $form = new Form();
+
+        $fieldset = new Fieldset();
+
+        $form->add($fieldset);
+
+        $this->assertSame('<form><fieldset></fieldset></form>', $form->render());
     }
 }
